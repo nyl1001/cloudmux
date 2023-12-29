@@ -17,8 +17,8 @@ package cloudprovider
 import (
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
 )
 
 func WaitStatusWithSync(res ICloudResource, expect string, sync func(status string), interval time.Duration, timeout time.Duration) error {

@@ -22,13 +22,13 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/fileutils"
 	tos "github.com/volcengine/ve-tos-golang-sdk/v2/tos"
 	"github.com/volcengine/ve-tos-golang-sdk/v2/tos/enum"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/fileutils"
 )
 
 type SBucket struct {

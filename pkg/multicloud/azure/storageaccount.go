@@ -32,13 +32,13 @@ import (
 	"github.com/Microsoft/azure-vhd-utils/vhdcore/common"
 	"github.com/Microsoft/azure-vhd-utils/vhdcore/diskstream"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/utils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SContainer struct {

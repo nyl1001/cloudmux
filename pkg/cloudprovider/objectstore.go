@@ -25,9 +25,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
 	"yunion.io/x/s3cli"
 )
 

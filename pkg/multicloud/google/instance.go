@@ -20,21 +20,21 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/billing"
+	"github.com/nyl1001/pkg/util/cloudinit"
+	"github.com/nyl1001/pkg/util/encode"
+	"github.com/nyl1001/pkg/util/fileutils"
+	"github.com/nyl1001/pkg/util/imagetools"
+	"github.com/nyl1001/pkg/util/pinyinutils"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/billing"
-	"yunion.io/x/pkg/util/cloudinit"
-	"yunion.io/x/pkg/util/encode"
-	"yunion.io/x/pkg/util/fileutils"
-	"yunion.io/x/pkg/util/imagetools"
-	"yunion.io/x/pkg/util/pinyinutils"
-	"yunion.io/x/pkg/utils"
 
-	billing_api "yunion.io/x/cloudmux/pkg/apis/billing"
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	billing_api "github.com/nyl1001/cloudmux/pkg/apis/billing"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 const (

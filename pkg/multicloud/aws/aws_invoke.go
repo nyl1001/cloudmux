@@ -25,11 +25,11 @@ import (
 	"github.com/aws/aws-sdk-go/aws/corehandlers"
 	"github.com/aws/aws-sdk-go/aws/request"
 	v4 "github.com/aws/aws-sdk-go/aws/signer/v4"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/utils"
 )
 
 // eks only

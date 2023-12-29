@@ -15,11 +15,11 @@
 package hcso
 
 import (
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
 
-	api "yunion.io/x/cloudmux/pkg/apis/cloudid"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/cloudid"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SRole struct {

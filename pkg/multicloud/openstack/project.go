@@ -18,13 +18,13 @@ import (
 	"fmt"
 	"net/url"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/httputils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/httputils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/multicloud"
-	"yunion.io/x/cloudmux/pkg/multicloud/openstack/oscli"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/openstack/oscli"
 )
 
 type SProject struct {

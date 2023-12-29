@@ -20,10 +20,10 @@ import (
 
 	"github.com/aliyun/aliyun-oss-go-sdk/oss"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 const (

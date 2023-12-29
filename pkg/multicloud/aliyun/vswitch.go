@@ -19,15 +19,15 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/util/netutils"
+	"github.com/nyl1001/pkg/util/rbacscope"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/util/netutils"
-	"yunion.io/x/pkg/util/rbacscope"
-	"yunion.io/x/pkg/utils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 // {"AvailableIpAddressCount":4091,"CidrBlock":"172.31.32.0/20","CreationTime":"2017-03-19T13:37:44Z","Description":"System created default virtual switch.","IsDefault":true,"Status":"Available","VSwitchId":"vsw-j6c3gig5ub4fmi2veyrus","VSwitchName":"","VpcId":"vpc-j6c86z3sh8ufhgsxwme0q","ZoneId":"cn-hongkong-b"}

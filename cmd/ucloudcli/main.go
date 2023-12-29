@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/ucloud/ucloudcli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/ucloud/ucloudcli"
 )
 
 func main() {

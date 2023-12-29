@@ -17,11 +17,11 @@ package shell
 import (
 	"fmt"
 
+	"github.com/nyl1001/pkg/util/shellutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/util/shellutils"
 
-	"yunion.io/x/cloudmux/pkg/apis"
-	"yunion.io/x/cloudmux/pkg/multicloud/qcloud"
+	"github.com/nyl1001/cloudmux/pkg/apis"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/qcloud"
 )
 
 func init() {

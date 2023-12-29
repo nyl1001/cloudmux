@@ -22,14 +22,14 @@ import (
 
 	"github.com/pkg/errors"
 
+	"github.com/nyl1001/pkg/util/billing"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/util/billing"
 
-	billing_api "yunion.io/x/cloudmux/pkg/apis/billing"
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	billing_api "github.com/nyl1001/cloudmux/pkg/apis/billing"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SElasticcache struct {
@@ -311,10 +311,12 @@ func (self *SElasticcache) IsAutoRenew() bool {
 	return self.AutoRenewFlag == 1
 }
 
-//  redis:master:s1:r5:m1g:v4.0
+//	redis:master:s1:r5:m1g:v4.0
+//
 // 实例类型：2 – Redis2.8内存版（标准架构），3 – CKV 3.2内存版(标准架构)，4 – CKV 3.2内存版(集群架构)
 // ，6 – Redis4.0内存版（标准架构），7 – Redis4.0内存版（集群架构），
-//  8 – Redis5.0内存版（标准架构），9 – Redis5.0内存版（集群架构）
+//
+//	8 – Redis5.0内存版（标准架构），9 – Redis5.0内存版（集群架构）
 func (self *SElasticcache) GetInstanceType() string {
 	segs := make([]string, 6)
 	segs[0] = "redis"
@@ -1150,7 +1152,7 @@ type elasticcachInstanceSpec struct {
 	RedisReplicasNum string `json:"redis_replicas_num"`
 }
 
-//  redis:master:s1:r5:m1g:v4.0
+// redis:master:s1:r5:m1g:v4.0
 func parseLocalInstanceSpec(s string) (elasticcachInstanceSpec, error) {
 	ret := elasticcachInstanceSpec{}
 	segs := strings.Split(s, ":")

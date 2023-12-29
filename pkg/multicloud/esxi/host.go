@@ -27,17 +27,17 @@ import (
 	"github.com/vmware/govmomi/vim25/soap"
 	"github.com/vmware/govmomi/vim25/types"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/netutils"
+	"github.com/nyl1001/pkg/util/reflectutils"
+	"github.com/nyl1001/pkg/util/regutils"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/netutils"
-	"yunion.io/x/pkg/util/reflectutils"
-	"yunion.io/x/pkg/util/regutils"
-	"yunion.io/x/pkg/utils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 var (

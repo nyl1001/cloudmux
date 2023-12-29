@@ -19,8 +19,8 @@ import (
 	"strings"
 	"time"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/pkg/util/secrules"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/pkg/util/secrules"
 )
 
 type SFirewallAction struct {

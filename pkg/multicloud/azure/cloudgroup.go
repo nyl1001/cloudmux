@@ -19,11 +19,11 @@ import (
 	"net/url"
 	"strings"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/pinyinutils"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/pinyinutils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SCloudgroup struct {

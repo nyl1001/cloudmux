@@ -19,7 +19,7 @@ import (
 	"strings"
 	"time"
 
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SubjectAlternativeNames struct {

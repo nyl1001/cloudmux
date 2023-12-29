@@ -20,8 +20,8 @@ import (
 
 	"github.com/vmware/govmomi/vim25/types"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/pkg/errors"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/pkg/errors"
 )
 
 type SDiskConfig struct {

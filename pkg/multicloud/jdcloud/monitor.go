@@ -22,12 +22,12 @@ import (
 	jc_apis "github.com/jdcloud-api/jdcloud-sdk-go/services/monitor/apis"
 	client "github.com/jdcloud-api/jdcloud-sdk-go/services/monitor/client"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/timeutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/timeutils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 func (self *SJDCloudClient) GetMetrics(opts *cloudprovider.MetricListOptions) ([]cloudprovider.MetricValues, error) {

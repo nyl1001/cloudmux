@@ -14,7 +14,7 @@
 
 package qcloud
 
-import "yunion.io/x/pkg/errors"
+import "github.com/nyl1001/pkg/errors"
 
 type SElasticcacheTask struct {
 	Status      string `json:"Status"`

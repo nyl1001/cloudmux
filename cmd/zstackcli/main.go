@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/zstack/zstackcli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/zstack/zstackcli"
 )
 
 func main() {

@@ -19,10 +19,10 @@ import (
 	"fmt"
 	"strings"
 
-	"yunion.io/x/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/shellutils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/azure"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/azure"
 )
 
 func init() {

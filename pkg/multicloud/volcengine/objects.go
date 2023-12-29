@@ -18,11 +18,11 @@ import (
 	"context"
 	"net/http"
 
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/pkg/errors"
 	"github.com/volcengine/ve-tos-golang-sdk/v2/tos"
 	"github.com/volcengine/ve-tos-golang-sdk/v2/tos/enum"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
 )
 
 const (

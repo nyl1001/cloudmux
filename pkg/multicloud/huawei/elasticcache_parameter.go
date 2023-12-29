@@ -17,8 +17,8 @@ package huawei
 import (
 	"fmt"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 // https://support.huaweicloud.com/api-dcs/dcs-zh-api-180423027.html

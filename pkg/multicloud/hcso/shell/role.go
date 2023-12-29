@@ -18,13 +18,13 @@ import (
 	"fmt"
 	"io/ioutil"
 
+	"github.com/nyl1001/pkg/util/shellutils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/util/shellutils"
 
-	cloudid_api "yunion.io/x/cloudmux/pkg/apis/cloudid"
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	huawei "yunion.io/x/cloudmux/pkg/multicloud/hcso"
+	cloudid_api "github.com/nyl1001/cloudmux/pkg/apis/cloudid"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	huawei "github.com/nyl1001/cloudmux/pkg/multicloud/hcso"
 )
 
 func init() {

@@ -33,13 +33,13 @@ import (
 	"fmt"
 	"strings"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/stringutils"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/stringutils"
-	"yunion.io/x/pkg/utils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SBinding struct {

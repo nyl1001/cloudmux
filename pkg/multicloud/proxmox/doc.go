@@ -12,4 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package proxmox // import "yunion.io/x/cloudmux/pkg/multicloud/proxmox"
+package proxmox // import "github.com/nyl1001/cloudmux/pkg/multicloud/proxmox"

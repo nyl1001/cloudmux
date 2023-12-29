@@ -20,10 +20,10 @@ import (
 
 	"github.com/aws/aws-sdk-go/service/wafv2"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/utils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/utils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type sWafRule struct {

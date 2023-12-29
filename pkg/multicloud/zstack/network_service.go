@@ -18,9 +18,9 @@ import (
 	"fmt"
 	"net/url"
 
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/utils"
 )
 
 type SNetworkService struct {

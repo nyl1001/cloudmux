@@ -18,7 +18,7 @@ import (
 	"github.com/jdcloud-api/jdcloud-sdk-go/services/asset/apis"
 	"github.com/jdcloud-api/jdcloud-sdk-go/services/asset/client"
 
-	"yunion.io/x/pkg/errors"
+	"github.com/nyl1001/pkg/errors"
 )
 
 type SBalance struct {

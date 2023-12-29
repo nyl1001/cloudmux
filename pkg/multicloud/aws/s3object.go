@@ -20,10 +20,10 @@ import (
 
 	"github.com/aws/aws-sdk-go/service/s3"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SObject struct {

@@ -12,4 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package zstack // import "yunion.io/x/cloudmux/pkg/multicloud/zstack"
+package zstack // import "github.com/nyl1001/cloudmux/pkg/multicloud/zstack"

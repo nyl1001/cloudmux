@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/huawei/huaweicli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/huawei/huaweicli"
 )
 
 func main() {

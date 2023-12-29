@@ -19,10 +19,10 @@ import (
 	"fmt"
 	"os"
 
-	"yunion.io/x/pkg/util/printutils"
-	"yunion.io/x/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/printutils"
+	"github.com/nyl1001/pkg/util/shellutils"
 
-	"yunion.io/x/cloudmux/pkg/multicloud/esxi"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/esxi"
 )
 
 func getDatastore(cli *esxi.SESXiClient, dcId string, dsId string) (*esxi.SDatastore, error) {

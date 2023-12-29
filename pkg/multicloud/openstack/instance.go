@@ -22,15 +22,15 @@ import (
 
 	"gopkg.in/fatih/set.v0"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/billing"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/billing"
 
-	billing_api "yunion.io/x/cloudmux/pkg/apis/billing"
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	billing_api "github.com/nyl1001/cloudmux/pkg/apis/billing"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 const (
@@ -828,7 +828,7 @@ func (region *SRegion) LiveMigrateVM(instanceId string, hostName string) error {
 	return nil
 }
 
-//仅live-migration
+// 仅live-migration
 func (region *SRegion) ListServerMigration(instanceId string) error {
 	resource := fmt.Sprintf("/servers/%s/migrations", instanceId)
 	_, err := region.ecsGet(resource)
@@ -838,7 +838,7 @@ func (region *SRegion) ListServerMigration(instanceId string) error {
 	return nil
 }
 
-//仅live-migration
+// 仅live-migration
 func (region *SRegion) DeleteMigration(instanceId string, migrationId string) error {
 	resource := fmt.Sprintf("/servers/%s/migrations/%s", instanceId, migrationId)
 	_, err := region.ecsDelete(resource)
@@ -848,7 +848,7 @@ func (region *SRegion) DeleteMigration(instanceId string, migrationId string) er
 	return nil
 }
 
-//仅live-migration
+// 仅live-migration
 func (region *SRegion) ForceCompleteMigration(instanceId string, migrationId string) error {
 	params := jsonutils.NewDict()
 	params.Add(jsonutils.JSONNull, "force_complete")

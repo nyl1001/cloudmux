@@ -22,9 +22,9 @@ import (
 	"github.com/pkg/errors"
 	"yunion.io/x/jsonutils"
 
-	"yunion.io/x/cloudmux/pkg/apis"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/apis"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SSnapshotPolicyType string

@@ -5,7 +5,7 @@ import (
 
 	"yunion.io/x/jsonutils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SInstanceSnapshot struct {

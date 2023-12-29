@@ -17,11 +17,11 @@ package google
 import (
 	"time"
 
-	"yunion.io/x/pkg/util/netutils"
-	"yunion.io/x/pkg/util/rbacscope"
+	"github.com/nyl1001/pkg/util/netutils"
+	"github.com/nyl1001/pkg/util/rbacscope"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SNetwork struct {

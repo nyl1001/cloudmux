@@ -21,16 +21,16 @@ import (
 	"sync"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/timeutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/timeutils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/auth"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/auth/credentials"
-	"yunion.io/x/cloudmux/pkg/multicloud/huawei/obs"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/auth"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/auth/credentials"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/huawei/obs"
 )
 
 /*

@@ -17,7 +17,7 @@ package remotefile
 import (
 	"context"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SLoadbalancer struct {

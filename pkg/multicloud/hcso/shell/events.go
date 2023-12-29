@@ -17,9 +17,9 @@ package shell
 import (
 	"time"
 
-	"yunion.io/x/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/shellutils"
 
-	huawei "yunion.io/x/cloudmux/pkg/multicloud/hcso"
+	huawei "github.com/nyl1001/cloudmux/pkg/multicloud/hcso"
 )
 
 func init() {

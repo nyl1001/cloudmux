@@ -17,9 +17,9 @@ package aws
 import (
 	"strings"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
-	"yunion.io/x/pkg/errors"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/pkg/errors"
 )
 
 type AliasesType struct {

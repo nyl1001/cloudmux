@@ -17,10 +17,10 @@ package openstack
 import (
 	"fmt"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/regutils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/regutils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SInstanceNic struct {

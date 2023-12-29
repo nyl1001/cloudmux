@@ -20,8 +20,8 @@ import (
 
 	sdkerrors "github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common/errors"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/utils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/utils"
 )
 
 type SFetchTagRow struct {

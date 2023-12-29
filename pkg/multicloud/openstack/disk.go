@@ -21,15 +21,15 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/version"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/version"
 
-	billing_api "yunion.io/x/cloudmux/pkg/apis/billing"
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	billing_api "github.com/nyl1001/cloudmux/pkg/apis/billing"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 const (

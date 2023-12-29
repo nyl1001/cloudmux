@@ -14,7 +14,7 @@
 
 package cloudprovider
 
-import "yunion.io/x/pkg/errors"
+import "github.com/nyl1001/pkg/errors"
 
 const (
 	ErrMissingParameter    = errors.Error("MissingParameterError")

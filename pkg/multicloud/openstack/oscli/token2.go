@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/util/rbacscope"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/util/rbacscope"
 )
 
 type KeystoneEndpointV2 struct {

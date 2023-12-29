@@ -23,15 +23,15 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/utils"
 	"yunion.io/x/s3cli"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
-	"yunion.io/x/cloudmux/pkg/multicloud/huawei/obs"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/huawei/obs"
 )
 
 type SBucket struct {
@@ -1005,8 +1005,8 @@ func (b *SBucket) actionToCannedAction(actions []string) string {
 }
 
 /*
-	example: in:domain/93887001882246db9273e5f59d544191:user/0932bb867900f4ca1f17c013ba9e3203
-	out:93887001882246db9273e5f59d544191:0932bb867900f4ca1f17c013ba9e3203
+example: in:domain/93887001882246db9273e5f59d544191:user/0932bb867900f4ca1f17c013ba9e3203
+out:93887001882246db9273e5f59d544191:0932bb867900f4ca1f17c013ba9e3203
 */
 func getLocalPrincipalId(principals []string) []string {
 	res := []string{}

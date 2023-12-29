@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/aws/awscli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/aws/awscli"
 )
 
 func main() {

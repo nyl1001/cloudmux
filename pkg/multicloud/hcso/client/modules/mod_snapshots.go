@@ -15,8 +15,8 @@
 package modules
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/manager"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/responses"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/manager"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/responses"
 )
 
 type SSnapshotManager struct {

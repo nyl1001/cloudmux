@@ -21,10 +21,10 @@ import (
 	alierr "github.com/aliyun/alibaba-cloud-sdk-go/sdk/errors"
 	"github.com/aliyun/alibaba-cloud-sdk-go/services/ecs"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/netutils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/netutils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SInstanceNic struct {

@@ -15,9 +15,9 @@
 package generic
 
 import (
-	"yunion.io/x/pkg/errors"
+	"github.com/nyl1001/pkg/errors"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 func GetResourceByFuncs[T cloudprovider.ICloudResource](objs []T, idFs []func(T) string, id string) (T, error) {

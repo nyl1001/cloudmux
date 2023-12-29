@@ -22,13 +22,13 @@ import (
 
 	"golang.org/x/net/http/httpproxy"
 
-	"yunion.io/x/pkg/util/printutils"
-	"yunion.io/x/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/printutils"
+	"github.com/nyl1001/pkg/util/shellutils"
 	"yunion.io/x/structarg"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/azure"
-	_ "yunion.io/x/cloudmux/pkg/multicloud/azure/shell"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/azure"
+	_ "github.com/nyl1001/cloudmux/pkg/multicloud/azure/shell"
 )
 
 type BaseOptions struct {

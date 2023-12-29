@@ -18,7 +18,7 @@ import (
 	"net/url"
 	"strconv"
 
-	"yunion.io/x/pkg/errors"
+	"github.com/nyl1001/pkg/errors"
 )
 
 type SInstanceType struct {

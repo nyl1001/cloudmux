@@ -15,11 +15,11 @@
 package esxi
 
 import (
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/utils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/utils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 func (cli *SESXiClient) GetISnapshots() ([]cloudprovider.ICloudSnapshot, error) {

@@ -17,10 +17,10 @@ package shell
 import (
 	"fmt"
 
-	"yunion.io/x/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/shellutils"
 
-	"yunion.io/x/cloudmux/pkg/multicloud/huawei"
-	"yunion.io/x/cloudmux/pkg/multicloud/objectstore"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/huawei"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/objectstore"
 )
 
 func init() {

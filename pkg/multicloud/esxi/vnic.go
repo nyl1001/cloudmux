@@ -17,10 +17,10 @@ package esxi
 import (
 	"github.com/vmware/govmomi/vim25/types"
 
+	"github.com/nyl1001/pkg/util/netutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/util/netutils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SVirtualNIC struct {

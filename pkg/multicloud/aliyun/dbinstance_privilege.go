@@ -17,7 +17,7 @@ package aliyun
 import (
 	"fmt"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
 )
 
 type SDatabasePrivilege struct {

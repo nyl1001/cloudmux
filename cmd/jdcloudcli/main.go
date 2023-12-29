@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/jdcloud/jdcloudcli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/jdcloud/jdcloudcli"
 )
 
 func main() {

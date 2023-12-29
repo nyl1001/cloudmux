@@ -15,7 +15,7 @@
 package cloudprovider
 
 import (
-	"yunion.io/x/pkg/utils"
+	"github.com/nyl1001/pkg/utils"
 )
 
 type TDnsZoneType string

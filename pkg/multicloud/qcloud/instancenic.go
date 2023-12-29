@@ -15,8 +15,8 @@
 package qcloud
 
 import (
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/pkg/util/netutils"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/pkg/util/netutils"
 )
 
 type SInstanceNic struct {

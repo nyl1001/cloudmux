@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/oracle/ocli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/oracle/ocli"
 )
 
 func main() {

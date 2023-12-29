@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/openstack/openstackcli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/openstack/openstackcli"
 )
 
 func main() {

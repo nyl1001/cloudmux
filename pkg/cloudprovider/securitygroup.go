@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"strings"
 
-	"yunion.io/x/pkg/util/secrules"
+	"github.com/nyl1001/pkg/util/secrules"
 )
 
 type SecurityGroupReference struct {

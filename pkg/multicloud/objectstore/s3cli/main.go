@@ -18,15 +18,15 @@ import (
 	"fmt"
 	"os"
 
-	"yunion.io/x/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/shellutils"
 	"yunion.io/x/structarg"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/objectstore"
-	"yunion.io/x/cloudmux/pkg/multicloud/objectstore/ceph"
-	_ "yunion.io/x/cloudmux/pkg/multicloud/objectstore/shell"
-	"yunion.io/x/cloudmux/pkg/multicloud/objectstore/xsky"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/objectstore"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/objectstore/ceph"
+	_ "github.com/nyl1001/cloudmux/pkg/multicloud/objectstore/shell"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/objectstore/xsky"
 )
 
 type BaseOptions struct {

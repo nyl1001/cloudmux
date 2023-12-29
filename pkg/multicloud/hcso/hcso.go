@@ -26,12 +26,12 @@ import (
 
 	"github.com/huaweicloud/huaweicloud-sdk-go/auth/aksk"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/gotypes"
+	"github.com/nyl1001/pkg/util/httputils"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/gotypes"
-	"yunion.io/x/pkg/util/httputils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type akClient struct {

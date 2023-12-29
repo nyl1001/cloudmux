@@ -1,8 +1,8 @@
 ROOT_DIR := $(CURDIR)
 BUILD_DIR := $(ROOT_DIR)/_output
 BIN_DIR := $(BUILD_DIR)/bin
-REPO_PREFIX := yunion.io/x/cloudmux
-VERSION_PKG := yunion.io/x/pkg/util/version
+REPO_PREFIX := github.com/nyl1001/cloudmux
+VERSION_PKG := github.com/nyl1001/pkg/util/version
 
 output_dir:
 	@mkdir -p $(BUILD_DIR)
@@ -42,7 +42,7 @@ test:
 	go test -v $(GO_BUILD_FLAGS) ./...
 
 fmt:
-	goimports -w -local "yunion.io/x/:yunion.io/x/onecloud:yunion.io/x/cloudmux" pkg cmd
+	goimports -w -local "yunion.io/x/:yunion.io/x/onecloud:github.com/nyl1001/cloudmux" pkg cmd
 
 GOPROXY ?= direct
 

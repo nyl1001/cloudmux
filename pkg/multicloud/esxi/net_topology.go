@@ -19,8 +19,8 @@ import (
 
 	"github.com/vmware/govmomi/vim25/mo"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/netutils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/netutils"
 )
 
 func (cli *SESXiClient) HostVmIPsInDc(ctx context.Context, dc *SDatacenter) (SNetworkInfo, error) {

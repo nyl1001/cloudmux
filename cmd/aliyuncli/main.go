@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/aliyun/aliyuncli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/aliyun/aliyuncli"
 )
 
 func main() {

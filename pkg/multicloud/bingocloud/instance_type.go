@@ -4,8 +4,8 @@ import (
 	"strings"
 	"time"
 
-	"yunion.io/x/cloudmux/pkg/apis"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/apis"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 var INSTANCE_CATEGORY_MAP = map[string]string{

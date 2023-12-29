@@ -15,8 +15,8 @@
 package shell
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/qcloud"
-	"yunion.io/x/pkg/util/shellutils"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/qcloud"
+	"github.com/nyl1001/pkg/util/shellutils"
 )
 
 func init() {

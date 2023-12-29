@@ -18,7 +18,7 @@ import (
 	"reflect"
 	"strings"
 
-	"yunion.io/x/pkg/utils"
+	"github.com/nyl1001/pkg/utils"
 )
 
 // SHCSOEndpoints 华为私有云endpoints配置

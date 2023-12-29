@@ -15,10 +15,10 @@
 package shell
 
 import (
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	huawei "yunion.io/x/cloudmux/pkg/multicloud/hcso"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	huawei "github.com/nyl1001/cloudmux/pkg/multicloud/hcso"
+	"github.com/nyl1001/pkg/util/shellutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/util/shellutils"
 )
 
 func init() {

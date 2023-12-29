@@ -19,12 +19,12 @@ import (
 	"strconv"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/timeutils"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/timeutils"
-	"yunion.io/x/pkg/utils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 const (

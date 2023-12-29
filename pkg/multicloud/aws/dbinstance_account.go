@@ -15,7 +15,7 @@
 package aws
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SDBInstanceAccount struct {

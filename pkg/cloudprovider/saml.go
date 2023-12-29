@@ -14,7 +14,7 @@
 
 package cloudprovider
 
-import "yunion.io/x/pkg/util/samlutils"
+import "github.com/nyl1001/pkg/util/samlutils"
 
 const (
 	SAML_ENTITY_ID_ALIYUN_ROLE  = "urn:alibaba:cloudcomputing"

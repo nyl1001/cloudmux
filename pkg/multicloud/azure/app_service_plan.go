@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"yunion.io/x/pkg/errors"
+	"github.com/nyl1001/pkg/errors"
 )
 
 type SAppServicePlan struct {

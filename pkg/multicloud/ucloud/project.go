@@ -15,7 +15,7 @@
 package ucloud
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 // https://docs.ucloud.cn/api/summary/get_project_list

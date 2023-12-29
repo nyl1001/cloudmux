@@ -25,13 +25,13 @@ import (
 	"strings"
 	"time"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/fileutils"
-	"yunion.io/x/pkg/util/printutils"
-	"yunion.io/x/pkg/util/shellutils"
-	"yunion.io/x/pkg/util/streamutils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/fileutils"
+	"github.com/nyl1001/pkg/util/printutils"
+	"github.com/nyl1001/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/streamutils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type ObjectHeaderOptions struct {

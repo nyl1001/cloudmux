@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package apsara // import "yunion.io/x/cloudmux/pkg/multicloud/apsara"
+package apsara // import "github.com/nyl1001/cloudmux/pkg/multicloud/apsara"
 
 /*
 接口相关调用

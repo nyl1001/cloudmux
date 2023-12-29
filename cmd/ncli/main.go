@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/nutanix/ncli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/nutanix/ncli"
 )
 
 func main() {

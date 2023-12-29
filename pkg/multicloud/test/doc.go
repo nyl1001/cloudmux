@@ -12,4 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package test // import "yunion.io/x/cloudmux/pkg/multicloud/test"
+package test // import "github.com/nyl1001/cloudmux/pkg/multicloud/test"

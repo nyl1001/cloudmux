@@ -18,11 +18,11 @@ import (
 	"fmt"
 	"os"
 
-	"yunion.io/x/pkg/errors"
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/structarg"
 
-	"yunion.io/x/cloudmux/pkg/multicloud/cmx/shell"
-	_ "yunion.io/x/cloudmux/pkg/multicloud/loader"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/cmx/shell"
+	_ "github.com/nyl1001/cloudmux/pkg/multicloud/loader"
 )
 
 func getSubcommandParser() (*structarg.ArgumentParser, error) {

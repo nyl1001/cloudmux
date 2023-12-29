@@ -19,16 +19,16 @@ import (
 	"time"
 	"unicode"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/samlutils"
+	"github.com/nyl1001/pkg/util/stringutils"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/samlutils"
-	"yunion.io/x/pkg/util/stringutils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/cloudid"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/modules"
-	"yunion.io/x/cloudmux/pkg/multicloud/huawei"
+	api "github.com/nyl1001/cloudmux/pkg/apis/cloudid"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/modules"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/huawei"
 )
 
 type SAMLProviderLinks struct {

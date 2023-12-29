@@ -15,11 +15,11 @@
 package provider
 
 import (
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/objectstore"
-	"yunion.io/x/cloudmux/pkg/multicloud/objectstore/ceph"
-	s3provider "yunion.io/x/cloudmux/pkg/multicloud/objectstore/provider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/objectstore"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/objectstore/ceph"
+	s3provider "github.com/nyl1001/cloudmux/pkg/multicloud/objectstore/provider"
 )
 
 type SCephRadosProviderFactory struct {

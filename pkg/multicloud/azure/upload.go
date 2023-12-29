@@ -29,8 +29,8 @@ import (
 	"github.com/Microsoft/azure-vhd-utils/vhdcore/footer"
 	"github.com/Microsoft/azure-vhd-utils/vhdcore/validator"
 
-	"yunion.io/x/cloudmux/pkg/multicloud/azure/concurrent"
-	"yunion.io/x/cloudmux/pkg/multicloud/azure/progress"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/azure/concurrent"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/azure/progress"
 )
 
 // DiskUploadContext type describes VHD upload context, this includes the disk stream to read from, the ranges of
@@ -56,13 +56,11 @@ type DiskUploadContext struct {
 }
 
 // oneMB is one MegaByte
-//
 const oneMB = float64(1048576)
 
 // Upload uploads the disk ranges described by the parameter cxt, this parameter describes the disk stream to
 // read from, the ranges of the stream to read, the destination blob and it's container, the client to communicate
 // with Azure storage and the number of parallel go-routines to use for upload.
-//
 func Upload(cxt *DiskUploadContext, callback func(float32)) error {
 	// Get the channel that contains stream of disk data to upload
 	dataWithRangeChan, streamReadErrChan := GetDataWithRanges(cxt.VhdStream, cxt.UploadableRanges)
@@ -162,7 +160,6 @@ L:
 // It returns two channels, a data channel to stream the disk ranges and a channel to send any error while reading
 // the disk. On successful completion the data channel will be closed. the caller must not expect any more value in
 // the data channel if the error channel is signaled.
-//
 func GetDataWithRanges(stream *diskstream.DiskStream, ranges []*common.IndexRange) (<-chan *DataWithRange, <-chan error) {
 	dataWithRangeChan := make(chan *DataWithRange, 0)
 	errorChan := make(chan error, 0)
@@ -191,7 +188,6 @@ func GetDataWithRanges(stream *diskstream.DiskStream, ranges []*common.IndexRang
 
 // readAndPrintProgress reads the progress records from the given progress channel and output it. It reads the
 // progress record until the channel is closed.
-//
 func readAndPrintProgress(progressChan <-chan *progress.Record, resume bool, callback func(float32)) {
 	var spinChars = [4]rune{'\\', '|', '/', '-'}
 	s := time.Time{}
@@ -326,7 +322,6 @@ func LocateNonEmptyRangeIndices(stream *diskstream.DiskStream, ranges []*common.
 }
 
 // isAllZero returns true if the given byte slice contain all zeros
-//
 func isAllZero(buf []byte) bool {
 	l := len(buf)
 	j := 0

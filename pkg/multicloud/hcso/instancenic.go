@@ -17,8 +17,8 @@ package hcso
 import (
 	"yunion.io/x/log"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/modules"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/modules"
 )
 
 // ===========================================

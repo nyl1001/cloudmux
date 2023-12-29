@@ -17,12 +17,12 @@ package huawei
 import (
 	"fmt"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/netutils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/netutils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 // 华为云的子网有点特殊。子网在整个region可用。

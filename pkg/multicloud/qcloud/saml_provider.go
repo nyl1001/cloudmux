@@ -20,12 +20,12 @@ import (
 	"time"
 	"unicode"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/samlutils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/samlutils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/cloudid"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	api "github.com/nyl1001/cloudmux/pkg/apis/cloudid"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SAMLProvider struct {

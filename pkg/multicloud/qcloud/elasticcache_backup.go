@@ -24,9 +24,9 @@ import (
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SElasticcacheBackup struct {
@@ -61,12 +61,12 @@ func (self *SElasticcacheBackup) GetGlobalId() string {
 }
 
 /*
-	ELASTIC_CACHE_BACKUP_STATUS_CREATING       = "creating" // 备份中
-	ELASTIC_CACHE_BACKUP_STATUS_CREATE_EXPIRED = "expired"  //（备份文件已过期）
-	ELASTIC_CACHE_BACKUP_STATUS_CREATE_DELETED = "deleted"  //（备份文件已删除）
-	ELASTIC_CACHE_BACKUP_STATUS_DELETING       = "deleting" // 删除中
-	ELASTIC_CACHE_BACKUP_STATUS_SUCCESS        = "success"  // 备份成功
-	ELASTIC_CACHE_BACKUP_STATUS_FAILED         = "failed"   // 备份失败
+ELASTIC_CACHE_BACKUP_STATUS_CREATING       = "creating" // 备份中
+ELASTIC_CACHE_BACKUP_STATUS_CREATE_EXPIRED = "expired"  //（备份文件已过期）
+ELASTIC_CACHE_BACKUP_STATUS_CREATE_DELETED = "deleted"  //（备份文件已删除）
+ELASTIC_CACHE_BACKUP_STATUS_DELETING       = "deleting" // 删除中
+ELASTIC_CACHE_BACKUP_STATUS_SUCCESS        = "success"  // 备份成功
+ELASTIC_CACHE_BACKUP_STATUS_FAILED         = "failed"   // 备份失败
 */
 func (self *SElasticcacheBackup) GetStatus() string {
 	switch self.Status {

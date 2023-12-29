@@ -18,10 +18,10 @@ import (
 	"fmt"
 	"strings"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/utils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/utils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SUrlMap struct {
@@ -57,10 +57,8 @@ type SForwardingRule struct {
 	BackendService      string   `json:"backendService"`
 }
 
-//
-//type STargetProxy struct {
-//}
-//
+// type STargetProxy struct {
+// }
 type SBackendServices struct {
 	SResourceBase
 

@@ -2,13 +2,13 @@
 
 target_dir=$1
 
-# find $target_dir | grep '.go$' | xargs -I{} sed -r -i "" "s|yunion.io/x/onecloud/pkg/cloudprovider|yunion.io/x/cloudmux/pkg/cloudprovider|g" {}
+# find $target_dir | grep '.go$' | xargs -I{} sed -r -i "" "s|yunion.io/x/onecloud/pkg/cloudprovider|github.com/nyl1001/cloudmux/pkg/cloudprovider|g" {}
 
-    # s|yunion.io/x/onecloud/pkg/apis|yunion.io/x/cloudmux/pkg/apis|g; \
+    # s|yunion.io/x/onecloud/pkg/apis|github.com/nyl1001/cloudmux/pkg/apis|g; \
 
 find $target_dir | grep '.go$' | xargs -I{} sed -r -i "" "s|multicloud.ApsaraTags|ApsaraTags|g; \
-    s|yunion.io/x/onecloud/pkg/cloudprovider|yunion.io/x/cloudmux/pkg/cloudprovider|g; \
-    s|yunion.io/x/onecloud/pkg/multicloud|yunion.io/x/cloudmux/pkg/multicloud|g; \
+    s|yunion.io/x/onecloud/pkg/cloudprovider|github.com/nyl1001/cloudmux/pkg/cloudprovider|g; \
+    s|yunion.io/x/onecloud/pkg/multicloud|github.com/nyl1001/cloudmux/pkg/multicloud|g; \
     s|multicloud.CloudpodsTags|CloudpodsTags|g; \
     s|multicloud.BingoTags|BingoTags|g; \
     s|multicloud.AwsTags|AwsTags|g; \

@@ -12,4 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package ctyun // import "yunion.io/x/cloudmux/pkg/multicloud/ctyun"
+package ctyun // import "github.com/nyl1001/cloudmux/pkg/multicloud/ctyun"

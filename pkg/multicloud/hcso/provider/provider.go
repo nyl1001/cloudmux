@@ -18,12 +18,12 @@ import (
 	"context"
 	"strings"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	huawei "yunion.io/x/cloudmux/pkg/multicloud/hcso"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	huawei "github.com/nyl1001/cloudmux/pkg/multicloud/hcso"
 )
 
 type SHCSOProviderFactory struct {

@@ -19,11 +19,11 @@ import (
 	"net/url"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 var (
@@ -69,7 +69,7 @@ func (self *SRole) GetDocument() *jsonutils.JSONDict {
 	return document.(*jsonutils.JSONDict)
 }
 
-//[{"Action":"sts:AssumeRoleWithSAML","Condition":{"StringEquals":{"SAML:aud":"https://signin.aws.amazon.com/saml"}},"Effect":"Allow","Principal":{"Federated":"arn:aws:iam::879324515906:saml-provider/quxuan"}}]
+// [{"Action":"sts:AssumeRoleWithSAML","Condition":{"StringEquals":{"SAML:aud":"https://signin.aws.amazon.com/saml"}},"Effect":"Allow","Principal":{"Federated":"arn:aws:iam::879324515906:saml-provider/quxuan"}}]
 func (self *SRole) GetSAMLProvider() string {
 	document := self.GetDocument()
 	if document != nil {

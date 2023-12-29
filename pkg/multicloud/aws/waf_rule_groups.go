@@ -17,8 +17,8 @@ package aws
 import (
 	"github.com/aws/aws-sdk-go/service/wafv2"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
 )
 
 type SWafRuleGroup struct {

@@ -20,7 +20,7 @@ import (
 	"sort"
 	"strings"
 
-	"yunion.io/x/pkg/tristate"
+	"github.com/nyl1001/pkg/tristate"
 )
 
 type TGlobalIdResource interface {

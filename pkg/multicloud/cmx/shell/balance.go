@@ -14,7 +14,7 @@
 
 package shell
 
-import "yunion.io/x/cloudmux/pkg/cloudprovider"
+import "github.com/nyl1001/cloudmux/pkg/cloudprovider"
 
 func init() {
 	r := EmptyOptionProviderR("balance")

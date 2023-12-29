@@ -23,15 +23,15 @@ import (
 
 	"golang.org/x/net/http/httpproxy"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/shellutils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/shellutils"
 	"yunion.io/x/structarg"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/google"
-	_ "yunion.io/x/cloudmux/pkg/multicloud/google/shell"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/google"
+	_ "github.com/nyl1001/cloudmux/pkg/multicloud/google/shell"
 )
 
 type BaseOptions struct {

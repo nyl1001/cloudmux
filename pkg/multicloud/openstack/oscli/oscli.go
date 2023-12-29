@@ -23,10 +23,10 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/gotypes"
+	"github.com/nyl1001/pkg/util/httputils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/gotypes"
-	"yunion.io/x/pkg/util/httputils"
 )
 
 type Client struct {

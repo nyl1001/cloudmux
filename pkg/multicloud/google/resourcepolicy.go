@@ -20,11 +20,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
 
-	"yunion.io/x/cloudmux/pkg/apis"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/apis"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SDailySchedule struct {

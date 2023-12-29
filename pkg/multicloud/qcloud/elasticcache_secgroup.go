@@ -14,7 +14,7 @@
 
 package qcloud
 
-import "yunion.io/x/cloudmux/pkg/multicloud"
+import "github.com/nyl1001/cloudmux/pkg/multicloud"
 
 type SElasticcacheSecgroup struct {
 	multicloud.SElasticcacheBackupBase

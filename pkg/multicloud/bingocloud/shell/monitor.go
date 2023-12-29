@@ -15,11 +15,11 @@
 package shell
 
 import (
+	"github.com/nyl1001/pkg/util/shellutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/util/shellutils"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/bingocloud"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/bingocloud"
 )
 
 func init() {

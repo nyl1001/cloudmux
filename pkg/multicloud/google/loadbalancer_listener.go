@@ -21,11 +21,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SLoadbalancerListener struct {
@@ -241,11 +241,12 @@ func (self *SLoadbalancerListener) GetStickySession() string {
 /*
 https://cloud.google.com/load-balancing/docs/backend-service#sessionAffinity
 区域级外部 HTTP(S) 负载均衡器:
-   无 (NONE)
-   客户端 IP (CLIENT_IP)
-   生成的 Cookie (GENERATED_COOKIE)
-   标头字段 (HEADER_FIELD)
-   HTTP Cookie (HTTP_COOKIE)
+
+	无 (NONE)
+	客户端 IP (CLIENT_IP)
+	生成的 Cookie (GENERATED_COOKIE)
+	标头字段 (HEADER_FIELD)
+	HTTP Cookie (HTTP_COOKIE)
 */
 func (self *SLoadbalancerListener) GetStickySessionType() string {
 	switch self.backendService.SessionAffinity {

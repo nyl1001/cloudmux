@@ -23,21 +23,21 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/billing"
+	"github.com/nyl1001/pkg/util/cloudinit"
+	"github.com/nyl1001/pkg/util/imagetools"
+	"github.com/nyl1001/pkg/util/osprofile"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/billing"
-	"yunion.io/x/pkg/util/cloudinit"
-	"yunion.io/x/pkg/util/imagetools"
-	"yunion.io/x/pkg/util/osprofile"
-	"yunion.io/x/pkg/utils"
 
-	"yunion.io/x/cloudmux/pkg/apis"
-	billing_api "yunion.io/x/cloudmux/pkg/apis/billing"
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
-	"yunion.io/x/cloudmux/pkg/multicloud/huawei"
+	"github.com/nyl1001/cloudmux/pkg/apis"
+	billing_api "github.com/nyl1001/cloudmux/pkg/apis/billing"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/huawei"
 )
 
 const (

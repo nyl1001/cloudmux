@@ -23,16 +23,16 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/utils"
 	"yunion.io/x/s3cli"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
-	"yunion.io/x/cloudmux/pkg/multicloud/huawei"
-	"yunion.io/x/cloudmux/pkg/multicloud/huawei/obs"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/huawei"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/huawei/obs"
 )
 
 type SBucket struct {

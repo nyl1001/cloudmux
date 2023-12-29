@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package hcso // import huawei "yunion.io/x/cloudmux/pkg/multicloud/hcso"
+package hcso // import huawei "github.com/nyl1001/cloudmux/pkg/multicloud/hcso"
 
 /*
 接口调用

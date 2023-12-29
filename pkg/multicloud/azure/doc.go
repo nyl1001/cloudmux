@@ -12,4 +12,4 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package azure // import "yunion.io/x/cloudmux/pkg/multicloud/azure"
+package azure // import "github.com/nyl1001/cloudmux/pkg/multicloud/azure"

@@ -17,14 +17,14 @@ package oracle
 import (
 	"time"
 
+	"github.com/nyl1001/pkg/util/netutils"
+	"github.com/nyl1001/pkg/util/rbacscope"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/util/netutils"
-	"yunion.io/x/pkg/util/rbacscope"
 
-	"yunion.io/x/cloudmux/pkg/apis"
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	"github.com/nyl1001/cloudmux/pkg/apis"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SNetwork struct {

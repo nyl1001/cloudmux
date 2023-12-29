@@ -19,14 +19,14 @@ import (
 	"fmt"
 	"time"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/billing"
-	"yunion.io/x/pkg/util/sets"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/billing"
+	"github.com/nyl1001/pkg/util/sets"
 
-	billing_api "yunion.io/x/cloudmux/pkg/apis/billing"
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	billing_api "github.com/nyl1001/cloudmux/pkg/apis/billing"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 type SNovaRequest struct {

@@ -17,11 +17,11 @@ package modules
 import (
 	"fmt"
 
-	"yunion.io/x/pkg/errors"
+	"github.com/nyl1001/pkg/errors"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/manager"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/responses"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/manager"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/responses"
 )
 
 type SProjectManager struct {

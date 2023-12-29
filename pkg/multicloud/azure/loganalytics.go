@@ -19,7 +19,7 @@ import (
 	"net/url"
 	"time"
 
-	"yunion.io/x/pkg/util/httputils"
+	"github.com/nyl1001/pkg/util/httputils"
 )
 
 type SLoganalyticsWorkspace struct {

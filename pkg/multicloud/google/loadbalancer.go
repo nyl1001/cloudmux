@@ -20,13 +20,13 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/utils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/utils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 // 全球负载均衡 https://cloud.google.com/compute/docs/reference/rest/v1/globalAddresses/list
@@ -342,7 +342,8 @@ func (self *SLoadbalancer) GetILoadBalancerListenerById(listenerId string) (clou
 }
 
 // GET https://compute.googleapis.com/compute/v1/projects/{project}/aggregated/targetHttpProxies 前端监听
-//  tcp lb backend type: backend service
+//
+//	tcp lb backend type: backend service
 func (self *SRegion) GetRegionalTcpLoadbalancers() ([]SLoadbalancer, error) {
 	bss, err := self.GetRegionalBackendServices("protocol eq TCP")
 	if err != nil {
@@ -366,7 +367,7 @@ func (self *SRegion) GetRegionalTcpLoadbalancers() ([]SLoadbalancer, error) {
 	return lbs, nil
 }
 
-//  udp lb backend type: backend service
+// udp lb backend type: backend service
 func (self *SRegion) GetRegionalUdpLoadbalancers() ([]SLoadbalancer, error) {
 	bss, err := self.GetRegionalBackendServices("protocol eq UDP")
 	if err != nil {
@@ -390,7 +391,7 @@ func (self *SRegion) GetRegionalUdpLoadbalancers() ([]SLoadbalancer, error) {
 	return lbs, nil
 }
 
-//  http&https lb: urlmaps
+// http&https lb: urlmaps
 func (self *SRegion) GetRegionalHTTPLoadbalancers() ([]SLoadbalancer, error) {
 	ums, err := self.GetRegionalUrlMaps("")
 	if err != nil {

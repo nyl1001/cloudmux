@@ -26,15 +26,15 @@ import (
 	"github.com/tencentyun/cos-go-sdk-v5"
 	"gopkg.in/fatih/set.v0"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/timeutils"
 	"yunion.io/x/jsonutils"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/timeutils"
 	"yunion.io/x/s3cli"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud"
 )
 
 const (

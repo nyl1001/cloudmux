@@ -15,7 +15,7 @@
 package main
 
 import (
-	"yunion.io/x/cloudmux/pkg/multicloud/qingcloud/qingcli"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/qingcloud/qingcli"
 )
 
 func main() {

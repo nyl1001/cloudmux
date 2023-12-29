@@ -17,12 +17,12 @@ package modules
 import (
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/manager"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/requests"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/manager"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/requests"
 )
 
 type SCloudEyeManager struct {

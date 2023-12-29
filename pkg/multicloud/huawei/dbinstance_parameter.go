@@ -17,7 +17,7 @@ package huawei
 import (
 	"fmt"
 
-	"yunion.io/x/pkg/errors"
+	"github.com/nyl1001/pkg/errors"
 )
 
 type SDBInstanceParameter struct {

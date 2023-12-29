@@ -24,11 +24,11 @@ import (
 	"github.com/vmware/govmomi/vim25/mo"
 	"github.com/vmware/govmomi/vim25/types"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/sets"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/sets"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 var DATACENTER_PROPS = []string{"name", "parent", "datastore", "network"}

@@ -17,8 +17,8 @@ package jdcloud
 import (
 	"github.com/jdcloud-api/jdcloud-sdk-go/core"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SJDCloudClient struct {

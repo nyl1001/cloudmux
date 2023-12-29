@@ -18,7 +18,7 @@ import (
 	"fmt"
 	"net/url"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SInstanceNic struct {

@@ -14,7 +14,7 @@
 
 package aws
 
-import "yunion.io/x/pkg/errors"
+import "github.com/nyl1001/pkg/errors"
 
 type SCallerIdentity struct {
 	Arn     string `xml:"Arn"`

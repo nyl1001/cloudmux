@@ -18,14 +18,14 @@ import (
 	"encoding/base64"
 	"strings"
 
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/billing"
+	"github.com/nyl1001/pkg/util/cloudinit"
+	"github.com/nyl1001/pkg/util/osprofile"
+	"github.com/nyl1001/pkg/util/seclib"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/billing"
-	"yunion.io/x/pkg/util/cloudinit"
-	"yunion.io/x/pkg/util/osprofile"
-	"yunion.io/x/pkg/util/seclib"
 
-	"yunion.io/x/cloudmux/pkg/apis"
+	"github.com/nyl1001/cloudmux/pkg/apis"
 )
 
 type TOsType string

@@ -14,7 +14,7 @@
 
 package google
 
-import "yunion.io/x/pkg/errors"
+import "github.com/nyl1001/pkg/errors"
 
 type SCloudbuildBuild struct {
 	Id     string

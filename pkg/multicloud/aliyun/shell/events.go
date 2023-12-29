@@ -17,11 +17,11 @@ package shell
 import (
 	"fmt"
 
-	"yunion.io/x/pkg/errors"
-	"yunion.io/x/pkg/util/shellutils"
-	"yunion.io/x/pkg/util/timeutils"
+	"github.com/nyl1001/pkg/errors"
+	"github.com/nyl1001/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/timeutils"
 
-	"yunion.io/x/cloudmux/pkg/multicloud/aliyun"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/aliyun"
 )
 
 func init() {

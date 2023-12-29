@@ -14,7 +14,7 @@
 
 package shell
 
-import "yunion.io/x/pkg/util/printutils"
+import "github.com/nyl1001/pkg/util/printutils"
 
 func printList(data interface{}, total, offset, limit int, columns []string) {
 	printutils.PrintInterfaceList(data, total, offset, limit, columns)

@@ -1,1 +1,1 @@
-package provider // import "yunion.io/x/cloudmux/pkg/multicloud/proxmox/provider"
+package provider // import "github.com/nyl1001/cloudmux/pkg/multicloud/proxmox/provider"

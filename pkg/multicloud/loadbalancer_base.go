@@ -15,7 +15,7 @@
 package multicloud
 
 import (
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 )
 
 type SLoadbalancerBase struct {

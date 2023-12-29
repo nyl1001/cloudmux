@@ -18,8 +18,8 @@ import (
 	"context"
 	"strconv"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/objectstore"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/objectstore"
 )
 
 type SCephRadosBucket struct {

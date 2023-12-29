@@ -20,8 +20,8 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/log"
-	"yunion.io/x/pkg/errors"
 )
 
 const (

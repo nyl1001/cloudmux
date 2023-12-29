@@ -15,8 +15,8 @@
 package multicloud
 
 import (
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/pkg/errors"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/pkg/errors"
 )
 
 type SSecurityGroup struct {

@@ -19,7 +19,7 @@ import (
 	"crypto/sha1"
 	"encoding/hex"
 
-	"yunion.io/x/pkg/util/stringutils"
+	"github.com/nyl1001/pkg/util/stringutils"
 )
 
 type ISigner interface {

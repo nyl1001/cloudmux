@@ -15,12 +15,12 @@
 package modules
 
 import (
+	"github.com/nyl1001/pkg/errors"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/errors"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/manager"
-	"yunion.io/x/cloudmux/pkg/multicloud/hcso/client/requests"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/manager"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/requests"
 )
 
 type SImageManager struct {
@@ -56,7 +56,7 @@ func NewImageManager(cfg manager.IManagerConfig) *SImageManager {
 	}}
 }
 
-//https://support.huaweicloud.com/api-ims/zh-cn_topic_0020091566.html
+// https://support.huaweicloud.com/api-ims/zh-cn_topic_0020091566.html
 func (self *SImageManager) Get(id string, querys map[string]string) (jsonutils.JSONObject, error) {
 	if querys == nil {
 		querys = make(map[string]string, 0)

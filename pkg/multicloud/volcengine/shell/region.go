@@ -15,10 +15,10 @@
 package shell
 
 import (
-	"yunion.io/x/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/shellutils"
 
-	"yunion.io/x/cloudmux/pkg/multicloud/test"
-	"yunion.io/x/cloudmux/pkg/multicloud/volcengine"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/test"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/volcengine"
 )
 
 func init() {

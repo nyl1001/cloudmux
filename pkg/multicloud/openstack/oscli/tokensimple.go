@@ -20,9 +20,9 @@ import (
 	"strings"
 	"time"
 
+	"github.com/nyl1001/pkg/gotypes"
+	"github.com/nyl1001/pkg/util/rbacscope"
 	"yunion.io/x/jsonutils"
-	"yunion.io/x/pkg/gotypes"
-	"yunion.io/x/pkg/util/rbacscope"
 )
 
 type SSimpleToken struct {

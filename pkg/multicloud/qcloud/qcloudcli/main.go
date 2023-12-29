@@ -22,12 +22,12 @@ import (
 
 	"golang.org/x/net/http/httpproxy"
 
-	"yunion.io/x/pkg/util/shellutils"
+	"github.com/nyl1001/pkg/util/shellutils"
 	"yunion.io/x/structarg"
 
-	"yunion.io/x/cloudmux/pkg/cloudprovider"
-	"yunion.io/x/cloudmux/pkg/multicloud/qcloud"
-	_ "yunion.io/x/cloudmux/pkg/multicloud/qcloud/shell"
+	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
+	"github.com/nyl1001/cloudmux/pkg/multicloud/qcloud"
+	_ "github.com/nyl1001/cloudmux/pkg/multicloud/qcloud/shell"
 )
 
 type BaseOptions struct {

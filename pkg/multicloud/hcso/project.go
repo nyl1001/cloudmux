@@ -20,7 +20,7 @@ import (
 
 	"yunion.io/x/jsonutils"
 
-	api "yunion.io/x/cloudmux/pkg/apis/compute"
+	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
 )
 
 // https://support.huaweicloud.com/api-iam/zh-cn_topic_0057845625.html
