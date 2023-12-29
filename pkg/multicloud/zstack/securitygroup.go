@@ -20,7 +20,7 @@ import (
 	"strings"
 
 	"github.com/nyl1001/pkg/util/secrules"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"

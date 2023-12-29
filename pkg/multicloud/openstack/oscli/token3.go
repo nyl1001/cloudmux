@@ -23,7 +23,7 @@ import (
 	"github.com/nyl1001/pkg/errors"
 	"github.com/nyl1001/pkg/util/rbacscope"
 	"github.com/nyl1001/pkg/utils"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 const REGION_ZONE_SEP = '-'

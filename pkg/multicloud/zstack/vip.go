@@ -21,7 +21,7 @@ import (
 	"github.com/pkg/errors"
 
 	"github.com/nyl1001/pkg/util/netutils"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"

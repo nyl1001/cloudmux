@@ -18,7 +18,7 @@ import (
 	"regexp"
 	"strings"
 
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 type ListResult struct {

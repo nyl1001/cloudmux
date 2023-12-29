@@ -37,9 +37,10 @@ import (
 	"github.com/nyl1001/pkg/appctx"
 	"github.com/nyl1001/pkg/errors"
 	"github.com/nyl1001/pkg/gotypes"
+	"github.com/nyl1001/pkg/jsonutils"
 	"github.com/nyl1001/pkg/trace"
 	"github.com/nyl1001/pkg/utils"
-	"yunion.io/x/jsonutils"
+	"moul.io/http2curl"
 )
 
 type THttpMethod string

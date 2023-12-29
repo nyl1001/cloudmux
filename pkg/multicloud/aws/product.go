@@ -16,7 +16,7 @@ package aws
 
 import (
 	"github.com/nyl1001/pkg/errors"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 func (self *SRegion) priceRequest(apiName string, params map[string]interface{}, retval interface{}) error {

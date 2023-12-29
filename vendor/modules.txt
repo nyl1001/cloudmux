@@ -231,13 +231,13 @@ github.com/jstemmer/go-junit-report/parser
 # github.com/ma314smith/signedxml v0.0.0-20210628192057-abc5b481ae1c
 ## explicit
 github.com/ma314smith/signedxml
-# github.com/mattn/go-colorable v0.1.9
-## explicit; go 1.13
+# github.com/mattn/go-colorable v0.1.13
+## explicit; go 1.15
 github.com/mattn/go-colorable
-# github.com/mattn/go-isatty v0.0.14
-## explicit; go 1.12
+# github.com/mattn/go-isatty v0.0.20
+## explicit; go 1.15
 github.com/mattn/go-isatty
-# github.com/mgutz/ansi v0.0.0-20170206155736-9520e82c474b
+# github.com/mgutz/ansi v0.0.0-20200706080929-d51e80ef957d
 ## explicit
 github.com/mgutz/ansi
 # github.com/minio/minio-go/v6 v6.0.33
@@ -262,13 +262,15 @@ github.com/mozillazg/go-httpheader
 # github.com/mozillazg/go-pinyin v0.19.0
 ## explicit; go 1.11
 github.com/mozillazg/go-pinyin
-# github.com/nyl1001/pkg v1.0.1
+# github.com/nyl1001/pkg v1.0.2
 ## explicit; go 1.18
 github.com/nyl1001/pkg/appctx
 github.com/nyl1001/pkg/errors
 github.com/nyl1001/pkg/gotypes
+github.com/nyl1001/pkg/jsonutils
 github.com/nyl1001/pkg/object
 github.com/nyl1001/pkg/prettytable
+github.com/nyl1001/pkg/sortedmap
 github.com/nyl1001/pkg/trace
 github.com/nyl1001/pkg/tristate
 github.com/nyl1001/pkg/util/billing
@@ -299,6 +301,9 @@ github.com/nyl1001/pkg/util/timeutils
 github.com/nyl1001/pkg/util/version
 github.com/nyl1001/pkg/util/vmdkutils
 github.com/nyl1001/pkg/utils
+# github.com/nyl1001/structarg v0.0.0-20231229123935-b2091e44810e
+## explicit; go 1.12
+github.com/nyl1001/structarg
 # github.com/oracle/oci-go-sdk v24.3.0+incompatible
 ## explicit
 github.com/oracle/oci-go-sdk/common
@@ -308,7 +313,7 @@ github.com/pkg/errors
 # github.com/satori/go.uuid v1.2.0
 ## explicit
 github.com/satori/go.uuid
-# github.com/sirupsen/logrus v1.9.0
+# github.com/sirupsen/logrus v1.9.3
 ## explicit; go 1.13
 github.com/sirupsen/logrus
 # github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/common v1.0.413
@@ -374,17 +379,16 @@ go.opencensus.io/trace
 go.opencensus.io/trace/internal
 go.opencensus.io/trace/propagation
 go.opencensus.io/trace/tracestate
-# golang.org/x/crypto v0.0.0-20220411220226-7b82a4e95df4
-## explicit; go 1.17
+# golang.org/x/crypto v0.17.0
+## explicit; go 1.18
 golang.org/x/crypto/argon2
 golang.org/x/crypto/blake2b
 golang.org/x/crypto/blowfish
 golang.org/x/crypto/chacha20
 golang.org/x/crypto/curve25519
 golang.org/x/crypto/curve25519/internal/field
-golang.org/x/crypto/ed25519
+golang.org/x/crypto/internal/alias
 golang.org/x/crypto/internal/poly1305
-golang.org/x/crypto/internal/subtle
 golang.org/x/crypto/pkcs12
 golang.org/x/crypto/pkcs12/internal/rc2
 golang.org/x/crypto/ssh
@@ -394,11 +398,12 @@ golang.org/x/crypto/ssh/terminal
 ## explicit; go 1.11
 golang.org/x/lint
 golang.org/x/lint/golint
-# golang.org/x/mod v0.4.2
-## explicit; go 1.12
+# golang.org/x/mod v0.8.0
+## explicit; go 1.17
+golang.org/x/mod/internal/lazyregexp
 golang.org/x/mod/module
 golang.org/x/mod/semver
-# golang.org/x/net v0.0.0-20220418201149-a630d4f3e7a2
+# golang.org/x/net v0.10.0
 ## explicit; go 1.17
 golang.org/x/net/context
 golang.org/x/net/context/ctxhttp
@@ -423,22 +428,21 @@ golang.org/x/oauth2/google/internal/externalaccount
 golang.org/x/oauth2/internal
 golang.org/x/oauth2/jws
 golang.org/x/oauth2/jwt
-# golang.org/x/sync v0.0.0-20220722155255-886fb9371eb4
+# golang.org/x/sync v0.1.0
 ## explicit
 golang.org/x/sync/singleflight
-# golang.org/x/sys v0.0.0-20220829200755-d48e67d00261
-## explicit; go 1.17
+# golang.org/x/sys v0.15.0
+## explicit; go 1.18
 golang.org/x/sys/cpu
 golang.org/x/sys/execabs
-golang.org/x/sys/internal/unsafeheader
 golang.org/x/sys/plan9
 golang.org/x/sys/unix
 golang.org/x/sys/windows
-# golang.org/x/term v0.0.0-20210927222741-03fcf44c2211
-## explicit; go 1.17
+# golang.org/x/term v0.15.0
+## explicit; go 1.18
 golang.org/x/term
-# golang.org/x/text v0.3.7
-## explicit; go 1.17
+# golang.org/x/text v0.14.0
+## explicit; go 1.18
 golang.org/x/text/encoding
 golang.org/x/text/encoding/charmap
 golang.org/x/text/encoding/htmlindex
@@ -462,24 +466,23 @@ golang.org/x/text/unicode/norm
 # golang.org/x/time v0.0.0-20210220033141-f8bda1e9f3ba
 ## explicit
 golang.org/x/time/rate
-# golang.org/x/tools v0.1.2
-## explicit; go 1.17
+# golang.org/x/tools v0.6.0
+## explicit; go 1.18
 golang.org/x/tools/cmd/goimports
 golang.org/x/tools/go/ast/astutil
 golang.org/x/tools/go/gcexportdata
-golang.org/x/tools/go/internal/gcimporter
 golang.org/x/tools/internal/event
 golang.org/x/tools/internal/event/core
 golang.org/x/tools/internal/event/keys
 golang.org/x/tools/internal/event/label
 golang.org/x/tools/internal/fastwalk
+golang.org/x/tools/internal/gcimporter
 golang.org/x/tools/internal/gocommand
 golang.org/x/tools/internal/gopathwalk
 golang.org/x/tools/internal/imports
-# golang.org/x/xerrors v0.0.0-20200804184101-5ec99f83aff1
-## explicit; go 1.11
-golang.org/x/xerrors
-golang.org/x/xerrors/internal
+golang.org/x/tools/internal/pkgbits
+golang.org/x/tools/internal/tokeninternal
+golang.org/x/tools/internal/typeparams
 # google.golang.org/api v0.30.0
 ## explicit; go 1.11
 google.golang.org/api/googleapi
@@ -603,17 +606,20 @@ gopkg.in/ini.v1
 # gopkg.in/yaml.v2 v2.4.0
 ## explicit; go 1.15
 gopkg.in/yaml.v2
+# moul.io/http2curl v1.0.0
+## explicit
+moul.io/http2curl
 # moul.io/http2curl/v2 v2.3.0
 ## explicit; go 1.13
 moul.io/http2curl/v2
-# yunion.io/x/jsonutils v1.0.1-0.20230613121553-0f3b41e2ef19
-## explicit; go 1.18
+# yunion.io/x/jsonutils v1.0.0
+## explicit; go 1.12
 yunion.io/x/jsonutils
 # yunion.io/x/log v1.0.1-0.20230411060016-feb3f46ab361
 ## explicit; go 1.12
 yunion.io/x/log
 yunion.io/x/log/hooks
-# yunion.io/x/pkg v1.0.1-0.20230613081559-f38e2cb344b4
+# yunion.io/x/pkg v1.0.0
 ## explicit; go 1.18
 yunion.io/x/pkg/errors
 yunion.io/x/pkg/gotypes
@@ -626,6 +632,3 @@ yunion.io/x/pkg/utils
 # yunion.io/x/s3cli v0.0.0-20190917004522-13ac36d8687e
 ## explicit; go 1.12
 yunion.io/x/s3cli
-# yunion.io/x/structarg v0.0.0-20231017124457-df4d5009457c
-## explicit; go 1.12
-yunion.io/x/structarg

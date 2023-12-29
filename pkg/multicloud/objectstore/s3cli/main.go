@@ -19,7 +19,7 @@ import (
 	"os"
 
 	"github.com/nyl1001/pkg/util/shellutils"
-	"yunion.io/x/structarg"
+	"github.com/nyl1001/structarg"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"

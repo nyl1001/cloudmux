@@ -15,7 +15,7 @@
 package aliyun
 
 import (
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 func (self *SAliyunClient) ramRequest(apiName string, params map[string]string) (jsonutils.JSONObject, error) {

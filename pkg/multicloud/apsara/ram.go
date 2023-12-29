@@ -15,7 +15,7 @@
 package apsara
 
 import (
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 func (self *SApsaraClient) ramRequest(apiName string, params map[string]string) (jsonutils.JSONObject, error) {

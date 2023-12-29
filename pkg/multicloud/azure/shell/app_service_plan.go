@@ -18,7 +18,7 @@ import (
 	"fmt"
 
 	"github.com/nyl1001/pkg/util/shellutils"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	"github.com/nyl1001/cloudmux/pkg/multicloud/azure"
 )

@@ -49,7 +49,6 @@ const (
 	FullIsoTimeFormat     = "2006-01-02T15:04:05.000000Z07:00"
 	FullIsoNanoTimeFormat = "2006-01-02T15:04:05.000000000Z07:00"
 	MysqlTimeFormat       = "2006-01-02 15:04:05"
-	ClickhouseTimeFormat  = "2006-01-02 15:04:05 +0000 UTC"
 	NormalTimeFormat      = "2006-01-02T15:04:05"
 	FullNormalTimeFormat  = "2006-01-02T15:04:05.000000"
 	CompactTimeFormat     = "20060102150405"
@@ -63,7 +62,6 @@ const (
 	IsoTimeFormat2         = "2006-01-02 15:04:05Z07:00"
 	IsoNoSecondTimeFormat2 = "2006-01-02 15:04Z07:00"
 	FullIsoNanoTimeFormat2 = "2006-01-02 15:04:05.000000000Z07:00"
-	FullIsoNanoTimeFormat3 = "2006-01-02 15:04:05.000000000"
 
 	RFC2882Format = time.RFC1123
 )
@@ -86,10 +84,6 @@ func FullIsoNanoTime(now time.Time) string {
 
 func MysqlTime(now time.Time) string {
 	return Utcify(now).Format(MysqlTimeFormat)
-}
-
-func ClickhouseTime(now time.Time) string {
-	return Utcify(now).Format(ClickhouseTimeFormat)
 }
 
 func CompactTime(now time.Time) string {
@@ -152,7 +146,7 @@ func toFullIsoNanoTimeFormat(str string) string {
 		}
 	}
 	if pos < 0 { //避免-1越界
-		pos = len(subsecStr)
+		return str
 	}
 	leftOver := subsecStr[pos:]
 	subsecStr = subsecStr[:pos]
@@ -170,16 +164,8 @@ func ParseFullIsoTime2(str string) (time.Time, error) {
 	return time.Parse(FullIsoNanoTimeFormat2, toFullIsoNanoTimeFormat(str))
 }
 
-func ParseFullIsoTime3(str string) (time.Time, error) {
-	return time.Parse(FullIsoNanoTimeFormat3, toFullIsoNanoTimeFormat(str))
-}
-
 func ParseMysqlTime(str string) (time.Time, error) {
 	return time.Parse(MysqlTimeFormat, str)
-}
-
-func ParseClickhouseTime(str string) (time.Time, error) {
-	return time.Parse(ClickhouseTimeFormat, str)
 }
 
 func ParseNormalTime(str string) (time.Time, error) {
@@ -224,16 +210,12 @@ func ParseTimeStr(str string) (time.Time, error) {
 		return ParseIsoNoSecondTime(str)
 	} else if regutils.MatchFullISOTime2(str) {
 		return ParseFullIsoTime2(str)
-	} else if regutils.MatchFullISOTime3(str) {
-		return ParseFullIsoTime3(str)
 	} else if regutils.MatchISOTime2(str) {
 		return ParseIsoTime2(str)
 	} else if regutils.MatchISONoSecondTime2(str) {
 		return ParseIsoNoSecondTime2(str)
 	} else if regutils.MatchMySQLTime(str) {
 		return ParseMysqlTime(str)
-	} else if regutils.MatchClickhouseTime(str) {
-		return ParseClickhouseTime(str)
 	} else if regutils.MatchNormalTime(str) {
 		return ParseNormalTime(str)
 	} else if regutils.MatchFullNormalTime(str) {

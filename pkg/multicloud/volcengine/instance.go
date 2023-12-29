@@ -29,7 +29,7 @@ import (
 	"github.com/nyl1001/pkg/util/imagetools"
 	"github.com/nyl1001/pkg/util/osprofile"
 	"github.com/nyl1001/pkg/utils"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 const (

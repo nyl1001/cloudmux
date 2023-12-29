@@ -27,7 +27,7 @@ import (
 	"github.com/nyl1001/pkg/util/httputils"
 	"github.com/nyl1001/pkg/util/imagetools"
 	"github.com/nyl1001/pkg/util/multipart"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/compute"

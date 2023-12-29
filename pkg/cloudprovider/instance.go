@@ -23,7 +23,7 @@ import (
 	"github.com/nyl1001/pkg/util/cloudinit"
 	"github.com/nyl1001/pkg/util/osprofile"
 	"github.com/nyl1001/pkg/util/seclib"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	"github.com/nyl1001/cloudmux/pkg/apis"
 )

@@ -20,7 +20,7 @@ import (
 	"github.com/vmware/govmomi/vim25/types"
 
 	"github.com/nyl1001/pkg/errors"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 )
 

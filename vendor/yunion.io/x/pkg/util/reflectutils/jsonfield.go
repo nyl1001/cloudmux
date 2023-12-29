@@ -140,13 +140,6 @@ func (info *SStructFieldInfo) MarshalName() string {
 type SStructFieldValue struct {
 	Info  *SStructFieldInfo
 	Value reflect.Value
-
-	Parent *SEmbedStructFieldValue
-}
-
-type SEmbedStructFieldValue struct {
-	Field reflect.Value
-	Value reflect.Value
 }
 
 type SStructFieldValueSet []SStructFieldValue
@@ -213,10 +206,6 @@ func fetchStructFieldValueSet(dataValue reflect.Value, allocatePtr bool) SStruct
 }
 
 func fetchStructFieldValueSet2(dataValue reflect.Value, allocatePtr bool, tags map[string]string, includeIgnore bool) SStructFieldValueSet {
-	return fetchStructFieldValueSet3(dataValue, allocatePtr, tags, includeIgnore, nil)
-}
-
-func fetchStructFieldValueSet3(dataValue reflect.Value, allocatePtr bool, tags map[string]string, includeIgnore bool, parent *SEmbedStructFieldValue) SStructFieldValueSet {
 	fields := SStructFieldValueSet{}
 	dataType := dataValue.Type()
 	fieldInfos := fetchCacheStructFieldInfos(dataType)
@@ -231,8 +220,6 @@ func fetchStructFieldValueSet3(dataValue reflect.Value, allocatePtr bool, tags m
 		if !fv.IsValid() {
 			continue
 		}
-
-		var efv *SEmbedStructFieldValue
 		if sf.Anonymous {
 			// T, *T
 			switch fv.Kind() {
@@ -243,12 +230,6 @@ func fetchStructFieldValueSet3(dataValue reflect.Value, allocatePtr bool, tags m
 				if fv.IsNil() {
 					if fv.Kind() == reflect.Ptr && allocatePtr {
 						fv.Set(reflect.New(fv.Type().Elem()))
-					} else if fv.Kind() == reflect.Ptr && !allocatePtr {
-						efv = &SEmbedStructFieldValue{
-							Field: fv,
-							Value: reflect.New(fv.Type().Elem()),
-						}
-						fv = efv.Value
 					} else {
 						continue
 					}
@@ -261,21 +242,17 @@ func fetchStructFieldValueSet3(dataValue reflect.Value, allocatePtr bool, tags m
 			// field of interface type.
 			if fv.Kind() == reflect.Struct && sf.Type != gotypes.TimeType {
 				anonymousTags := utils.TagMap(sf.Tag)
-				subfields := fetchStructFieldValueSet3(fv, allocatePtr, anonymousTags, includeIgnore, efv)
+				subfields := fetchStructFieldValueSet2(fv, allocatePtr, anonymousTags, includeIgnore)
 				fields = append(fields, subfields...)
 				continue
 			}
 		}
 		fieldInfo := fieldInfos[sf.Name].deepCopy()
 		if !fieldInfo.Ignore || includeIgnore {
-			structFieldVaule := SStructFieldValue{
+			fields = append(fields, SStructFieldValue{
 				Info:  fieldInfo,
 				Value: fv,
-			}
-			if parent != nil {
-				structFieldVaule.Parent = parent
-			}
-			fields = append(fields, structFieldVaule)
+			})
 		}
 	}
 	if len(tags) > 0 {

@@ -18,7 +18,7 @@ import (
 	"fmt"
 
 	"github.com/nyl1001/pkg/errors"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 func (self *SGoogleClient) bigqueryPost(resource string, params map[string]string, body jsonutils.JSONObject) (jsonutils.JSONObject, error) {

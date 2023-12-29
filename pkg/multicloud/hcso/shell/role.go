@@ -19,7 +19,7 @@ import (
 	"io/ioutil"
 
 	"github.com/nyl1001/pkg/util/shellutils"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 
 	cloudid_api "github.com/nyl1001/cloudmux/pkg/apis/cloudid"

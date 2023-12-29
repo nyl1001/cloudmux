@@ -18,7 +18,7 @@ import (
 	"strconv"
 
 	"github.com/nyl1001/pkg/errors"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
 	"github.com/nyl1001/cloudmux/pkg/multicloud"

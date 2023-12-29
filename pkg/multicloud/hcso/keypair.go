@@ -23,7 +23,7 @@ import (
 	"github.com/aokoli/goutils"
 	"golang.org/x/crypto/ssh"
 
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 // https://support.huaweicloud.com/api-ecs/zh-cn_topic_0020212676.html

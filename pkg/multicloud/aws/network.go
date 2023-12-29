@@ -22,7 +22,7 @@ import (
 	"github.com/nyl1001/pkg/errors"
 	"github.com/nyl1001/pkg/util/netutils"
 	"github.com/nyl1001/pkg/util/rbacscope"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"

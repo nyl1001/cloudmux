@@ -17,7 +17,7 @@ package cloudprovider
 import (
 	"time"
 
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 type SClouduserCreateConfig struct {

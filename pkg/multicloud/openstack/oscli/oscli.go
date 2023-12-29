@@ -25,7 +25,7 @@ import (
 
 	"github.com/nyl1001/pkg/gotypes"
 	"github.com/nyl1001/pkg/util/httputils"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 )
 

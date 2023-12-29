@@ -16,7 +16,7 @@ package modules
 
 import (
 	"github.com/nyl1001/pkg/errors"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 	"github.com/nyl1001/cloudmux/pkg/multicloud/hcso/client/manager"

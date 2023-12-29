@@ -14,7 +14,7 @@
 
 package remotefile
 
-import "yunion.io/x/jsonutils"
+import "github.com/nyl1001/pkg/jsonutils"
 
 type SMisc struct {
 	SResourceBase

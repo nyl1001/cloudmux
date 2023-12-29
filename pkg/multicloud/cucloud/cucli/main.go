@@ -23,7 +23,7 @@ import (
 	"golang.org/x/net/http/httpproxy"
 
 	"github.com/nyl1001/pkg/util/shellutils"
-	"yunion.io/x/structarg"
+	"github.com/nyl1001/structarg"
 
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 	"github.com/nyl1001/cloudmux/pkg/multicloud/cucloud"

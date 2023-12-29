@@ -16,7 +16,7 @@ package hcso
 
 import (
 	"github.com/nyl1001/pkg/errors"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/cloudid"
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"

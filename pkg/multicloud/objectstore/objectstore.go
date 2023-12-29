@@ -23,7 +23,7 @@ import (
 	"github.com/nyl1001/pkg/object"
 	"github.com/nyl1001/pkg/util/httputils"
 	"github.com/nyl1001/pkg/util/secrules"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 	"yunion.io/x/s3cli"
 

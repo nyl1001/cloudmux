@@ -18,7 +18,7 @@ import (
 	"strings"
 	"time"
 
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
 	"github.com/nyl1001/cloudmux/pkg/multicloud"

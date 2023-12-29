@@ -28,7 +28,7 @@ import (
 	tos "github.com/volcengine/ve-tos-golang-sdk/v2/tos"
 	"github.com/volcengine/ve-tos-golang-sdk/v2/tos/enum"
 	sdk "github.com/volcengine/volc-sdk-golang/base"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 var RegionLocations = map[string]string{

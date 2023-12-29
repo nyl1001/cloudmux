@@ -25,7 +25,7 @@ import (
 	"github.com/nyl1001/pkg/util/netutils"
 	"github.com/nyl1001/pkg/util/rbacscope"
 	"github.com/nyl1001/pkg/utils"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 )
 

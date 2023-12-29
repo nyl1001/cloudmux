@@ -17,7 +17,7 @@ package ucloud
 import (
 	"testing"
 
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 func TestGetSignature(t *testing.T) {

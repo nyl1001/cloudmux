@@ -21,9 +21,9 @@ import (
 	"strconv"
 	"strings"
 
+	"github.com/nyl1001/pkg/jsonutils"
 	"github.com/nyl1001/pkg/prettytable"
 	"github.com/nyl1001/pkg/util/sets"
-	"yunion.io/x/jsonutils"
 )
 
 func PrintJSONList(list *ListResult, columns []string) {

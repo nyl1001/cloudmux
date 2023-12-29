@@ -29,7 +29,7 @@ import (
 	"github.com/nyl1001/pkg/util/httputils"
 	tos "github.com/volcengine/ve-tos-golang-sdk/v2/tos"
 	sdk "github.com/volcengine/volc-sdk-golang/base"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/compute"

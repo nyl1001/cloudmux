@@ -19,7 +19,7 @@ import (
 
 	"github.com/nyl1001/pkg/gotypes"
 	"github.com/nyl1001/pkg/util/rbacscope"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 type ExternalService struct {

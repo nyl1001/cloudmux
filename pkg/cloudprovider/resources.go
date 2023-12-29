@@ -24,7 +24,7 @@ import (
 	"github.com/nyl1001/pkg/util/rbacscope"
 	"github.com/nyl1001/pkg/util/samlutils"
 	"github.com/nyl1001/pkg/util/secrules"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 type ICloudResource interface {

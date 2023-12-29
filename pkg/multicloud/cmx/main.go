@@ -19,7 +19,7 @@ import (
 	"os"
 
 	"github.com/nyl1001/pkg/errors"
-	"yunion.io/x/structarg"
+	"github.com/nyl1001/structarg"
 
 	"github.com/nyl1001/cloudmux/pkg/multicloud/cmx/shell"
 	_ "github.com/nyl1001/cloudmux/pkg/multicloud/loader"

@@ -44,7 +44,7 @@ import (
 
 	"github.com/nyl1001/pkg/errors"
 	"github.com/nyl1001/pkg/util/vmdkutils"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/compute"

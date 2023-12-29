@@ -16,7 +16,7 @@ package zstack
 
 import (
 	"github.com/nyl1001/pkg/errors"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 )
 
 type SVersion struct {

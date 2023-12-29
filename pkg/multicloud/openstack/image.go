@@ -27,7 +27,7 @@ import (
 	"github.com/nyl1001/pkg/util/imagetools"
 	"github.com/nyl1001/pkg/util/qemuimgfmt"
 	"github.com/nyl1001/pkg/util/rbacscope"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 
 	api "github.com/nyl1001/cloudmux/pkg/apis/compute"
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"

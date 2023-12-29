@@ -17,7 +17,7 @@ package ucloud
 import (
 	"reflect"
 
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 )
 

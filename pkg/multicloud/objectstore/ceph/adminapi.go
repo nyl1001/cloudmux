@@ -25,7 +25,7 @@ import (
 	"github.com/nyl1001/pkg/tristate"
 	"github.com/nyl1001/pkg/util/httputils"
 	"github.com/nyl1001/pkg/util/s3auth"
-	"yunion.io/x/jsonutils"
+	"github.com/nyl1001/pkg/jsonutils"
 	"yunion.io/x/log"
 
 	"github.com/nyl1001/cloudmux/pkg/cloudprovider"
