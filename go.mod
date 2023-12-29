@@ -17,8 +17,8 @@ require (
 	github.com/fatih/color v1.13.0
 	github.com/huaweicloud/huaweicloud-sdk-go v1.0.26
 	github.com/jdcloud-api/jdcloud-sdk-go v1.55.0
-	github.com/nyl1001/pkg v1.0.2
-	github.com/nyl1001/structarg v0.0.0-20231229135807-6438d64411e7
+	github.com/nyl1001/pkg v1.0.3
+	github.com/nyl1001/structarg v0.0.0-20231229143840-31142c092ead
 	github.com/oracle/oci-go-sdk v24.3.0+incompatible
 	github.com/pkg/errors v0.9.1
 	github.com/sirupsen/logrus v1.9.3
